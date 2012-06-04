@@ -1,0 +1,27 @@
+{
+	"dsn": "mysql:dbname=adhoc;host=localhost",
+	"user": "adhoc",
+	"password": "adhoc",
+	"prefix": "adhoc_",
+	
+	"onAfterConnect": [
+		"SET NAMES UTF8",
+		"SET CHARACTERSET UTF8"
+	],
+
+	"appRoot": "/",
+	"docRoot": "/",
+	
+	"authorize": {
+		"fallbackTarget": "/"
+	},
+
+	"smtp": {
+		"required": false,
+		"host": "localhost",
+		"authRequired": false,
+		"authUser": "",
+		"authPass": "",
+		"port": 2525
+	}
+}

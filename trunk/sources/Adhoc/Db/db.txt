@@ -1,0 +1,60 @@
+Connection
+(cfg, options)
+- connect
+- disconnect
+- getOptions
+- setOptions
+- errorCode
+- errorMessage
+- lastInsertId
+- send
+- transaction
+Transaction (Connection)
+(cfg|Connection, options)
+- begin
+- commit
+- rollback
+SQL
+(Connection)
+- query
+- prepare
+- exec
+- getConnection
+Select (SQL)
+- limit
+- countQuery
+Batch []
+(Connection, mode)
+- add
+- parse
+- run
+Statement
+(SQL, PDOStatement, options)
+- bind
+- setResultset
+- getResultset
+- run
+- close
+- errorCode
+- errorMessage
+- getOptions
+- setOptions
+Binding
+(PDOStatement)
+- getName
+- getBound
+- setType
+- getType
+- setMaxLength
+- getMaxLength
+- setOptions
+- getOptions
+- bound
+Column (Binding)
+Variable (Binding)
+Value (Binding)
+Resultset []
+(PDOStatement)
+- getColumns
+Columns []
+(Resultset)

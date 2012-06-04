@@ -1,0 +1,9 @@
+{
+    "dsn": "mysql:dbname=yourdbname;host=yourhost",
+    "user": "yourdbuser",
+    "password": "yourpw",
+    "prefix": "yourtag_",
+
+    "appRoot": "/path/to/signin/",
+    "docRoot": "/path/to/"
+}
